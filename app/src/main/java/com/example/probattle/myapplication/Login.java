@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.ButtonBarLayout;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class Login extends AppCompatActivity {
 
@@ -20,7 +21,7 @@ public class Login extends AppCompatActivity {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), Market.class);
+                Intent i = new Intent(getApplicationContext(), Front.class);
                 startActivity(i);
             }
         });

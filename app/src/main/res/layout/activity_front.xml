@@ -23,6 +23,7 @@
         app:menu="@menu/activity_front_drawer" />
 
     <ListView
+        android:layout_margin="25dp"
         android:layout_width="match_parent"
         android:id="@+id/lv"
         android:layout_height="wrap_content"></ListView>

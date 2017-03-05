@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         random = new Random();
-        db = new DBHandler(MainActivity.this, "", null, 2);
+     /*   db = new DBHandler(MainActivity.this, "", null, 2);
         db.Insert("Google",String.valueOf(random.nextInt((max - min) + 1) + min), String.valueOf(new Date().getTime()));
         db.Insert("Facebook",String.valueOf(random.nextInt((max - min) + 1) + min),String.valueOf(new Date().getTime()));
         db.Insert("Amazon",String.valueOf(random.nextInt(100)),String.valueOf(new Date().getTime()));
@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity{
         db.Insert("Facebook",String.valueOf(random.nextInt(100)),String.valueOf(new Date().getTime()));
         db.Insert("Amazon",String.valueOf(random.nextInt(100)),String.valueOf(new Date().getTime()));
         db.Insert("FetchSky",String.valueOf(random.nextInt(100)),String.valueOf(new Date().getTime()));
-        db.Insert("Microsoft",String.valueOf(random.nextInt(100)),String.valueOf(new Date().getTime()));
+        db.Insert("Microsoft",String.valueOf(random.nextInt(100)),String.valueOf(new Date().getTime()));*/
 
-       /* Thread my = new Thread(){
+        Thread my = new Thread(){
             @Override
             public void run() {
                 try {
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity{
                 }
 
             }
-        };*/
+        };
         //my.start();
 
 

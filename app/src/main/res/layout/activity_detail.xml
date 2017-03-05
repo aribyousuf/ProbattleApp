@@ -3,23 +3,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:gravity="center"
 
     tools:context="com.example.probattle.myapplication.Detail">
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Buy"
-        android:background="@color/colorPrimary"/>
-
-
-    <Button
-        android:layout_width="100dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_margin="15dp"
-        android:background="@color/colorPrimary"
-        android:layout_height="wrap_content"
-        android:text="Sell"/>
+        android:layout_height="wrap_content">
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:src="@drawable/abc"
+           android:layout_height="150dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content">
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:id="@+id/graph" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Buy"
+            android:background="@color/colorPrimary"/>
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="Sell"/>
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

@@ -52,14 +52,7 @@ public class Front extends AppCompatActivity
             }
         });
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+      
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -113,9 +106,13 @@ public class Front extends AppCompatActivity
 
         } else if (id == R.id.trend) {
 
+            Intent i = new Intent(getApplicationContext(), Market.class);
+            finish();
+            startActivity(i);
+
         } else if (id == R.id.market) {
 
-            Intent i = new Intent(getApplicationContext(), MainActivity.class);
+            Intent i = new Intent(getApplicationContext(), Market.class);
             finish();
             startActivity(i);
         }
